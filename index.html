@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./multimedios/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Estampida | Home</title>
 </head>
 
@@ -13,7 +15,7 @@
 <!-- ▼HEADER DE LA PAGINA-->
     <header class="header">
         <img width="169px" height="127px" src="./multimedios/logo2.png" alt="logo estampida"> 
-        <h1 class="header__titulo">ESTAMPIDA</h1>                
+        <h1 class="header__titulo animate__animated animate__backInRight">ESTAMPIDA</h1>                
         <nav class="header__menu">
             <ul class="header__nav">
                 <li class="header__nav--li"><a href="index.html">HOME</a></li>
@@ -29,8 +31,8 @@
     <main class="main__principal">
         <img class="main__principal--imagen" src="./multimedios/principal2.jpg" alt="imagen grupal estampida">      
         <div class="main__principal--section">
-            <img class="main__principal--imagen" src="./multimedios/Perfil.jpg" alt="perfil imagen estampida">
-            <section class="main__principal--texto">
+            <img class="main__principal--imagen2" src="./multimedios/Perfil.jpg" alt="perfil imagen estampida">
+            <section class="main__principal--texto transicion__texto">
                 <h2 class="letraColor">BANDA ARGENTINA DE ROCK</h2>
                 <p>ESTAMPIDA: Es un grupo de Rock mendocino; se 
                 caracteriza por hacer temas de su propia autoría, y de 
@@ -54,14 +56,15 @@
         <div>
             <section class="video">
                 <h3>NUEVO VIDEO!! BICHO BRAVO</h3>
-                <iframe width="727" height="409" src="https://www.youtube.com/embed/HeC0vAOZ_Sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/HeC0vAOZ_Sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"></iframe>
             </section>
         </div>
             <article class="article">
-                <ul>
-                    <li class="article__ul--li"><img width="241" height="338" src="./multimedios/home1.jpeg" alt="vocalista"></li>
-                    <li class="article__ul--li"><img width="339" height="242" src="./multimedios/home3.jpeg" alt="baterista"></li>
-                    <li class="article__ul--li"><img width="243" height="341" src="./multimedios/home2.jpeg" alt="bajista"></li>
+                <ul class="moved">
+                    <li class="article__ul--li"><img class="transicion__img" width="241" height="338" src="./multimedios/home1.jpeg" alt="vocalista"></li>
+                    <li class="article__ul--li"><img class="moved__1 transicion__img" width="339" height="242" src="./multimedios/home3.jpeg" alt="baterista"></li>
+                    <li class="article__ul--li"><img class="transicion__img" width="243" height="341" src="./multimedios/home2.jpeg" alt="bajista"></li>
                 </ul>
             </article>
     </main>
@@ -72,12 +75,20 @@
             <ul>
                 <li class="icon"><a href="https://www.facebook.com/Estampida-1728061477284744"><span>Facebook</span></a></li>
                 <li class="icon"><a href="https://www.instagram.com/estampida_rock/"><span>Instagram</span></a></li>
-                <li class="icon"><a href="https://www.youtube.com/channel/UC1mdbTgt8qhGkV7et5-d0fA"><span>YouTube</span></a></li>              
+                <li class="icon"><a href="https://www.youtube.com/channel/UC1mdbTgt8qhGkV7et5-d0fA"><span>YouTube</span></a></li>
+                <li class="icon"><a href="https://soundcloud.com/estampidarock"><span>SoundCloud</span></a></li>
+                <li class="icon"><a href="https://open.spotify.com/artist/0LQGc5KNTRCItEaeTl6QSb?si=8DtR7bQWSyWkBw5kQ0SGxA"><span>Spotify</span></a></li>            
             </ul>
             <h4>ESTAMPIDA 2022 - Todos los derechos reservados</h4>
             <a class="footerHome" href="index.html">IR A HOME</a>
         </div>
     </footer>
 <!-- ▲FIN DE LA PAGINA-->
+<!-- ▼ JS AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<!-- ▲ FIN JS AOS-->
 </body>
 </html>

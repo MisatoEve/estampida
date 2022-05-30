@@ -14,10 +14,14 @@
 }
 .header__titulo {
     color: #aec3b0;
-    font-size: 250%;
+    font-size: 280%;
     font-family: 'Varela Round', sans-serif; 
     display: flex; 
-    align-items: center;  
+    align-items: center; 
+    background: linear-gradient(to top, #f1f2b5, #135058);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
 }
 .header__menu {
     margin: auto;
@@ -51,6 +55,9 @@
 .main__principal--imagen{
     width: 100%;
 }    
+.main__principal--imagen2{
+    width: 80%;
+}
 .main__principal--section {
     display: flex;
     justify-content: center;
@@ -65,6 +72,18 @@
     font-family: 'Varela Round', sans-serif;
     color: rgb(241, 237, 231);
 }
+.transicion__texto {
+    width: 40%;
+    height: 40%;
+    transition: width 1s linear, heigth 1s ease-in-out;
+}
+.transicion__texto:hover {
+    width: 60%;
+    height: 60%;
+    background-color: #01161e;
+    font-size: 130%;
+}
+
 .main__principal--texto .letraColor {
     color: #77a47b
 }
@@ -97,6 +116,21 @@ section>h3 {
 .article__ul--li {
     display: inline;
     padding: 20px;
+}
+
+.moved {
+    transform: scale(1)
+}
+.moved__1 {
+    transform: translateY(-50px);
+}
+.transicion__img {
+    transition: all .3s linear;
+}
+.transicion__img:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 15px #135058;
+    filter:contrast(1)
 }
 
 /* ESTILOS FOOTER */
@@ -188,20 +222,23 @@ footer>h4 {
     grid-template-rows: 1fr 1fr;
     grid-gap: 3rem;
     background-size: cover;
-    margin-bottom: 150px;     
+    margin-bottom: 150px;    
 }
 .main__banda1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    position: relative;
 }
 .main__banda2 {
     grid-column: 3 / 5;
     grid-row: 1 / 2;
+    position: relative;
 }
 .main__banda3 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    margin-top: 150px;
+    margin-top: 100px;
+    position: relative;
 }
 .letraColor {
     color: #77a47b;
@@ -210,10 +247,10 @@ footer>h4 {
     font-family: 'Montserrat', sans-serif;
 }
 .main__banda--titulos {
-    position: relative;
+    position: absolute;
     bottom: 0%;
     color: #aec3b0;
-    background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0.5));
+    background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
     width: 97%;
     margin: 0;
     padding: 10px;
@@ -227,7 +264,10 @@ footer>h4 {
     left: 10%;
     color:#77a47b;
     padding: 5%;
-
+}
+.logoSmall {
+    width: 5%;
+    animation: slide_logo 4s ease infinite;
 }
 .main__principal--contacto {
     background-color: #77a47b;
@@ -448,6 +488,10 @@ footer>h4 {
         display: flex;
         flex-direction: column;
     }
+    .logoSmall {
+        width: 8%;
+        animation: slide_logo 4s ease infinite;
+    }
 }
 
 /* RESPONSIVE */
@@ -455,7 +499,10 @@ footer>h4 {
 @media only screen and (min-width: 481px) and (max-width: 978px) {
     /* galeria */
     .header__titulo {
-        font-size: 200%;  
+        font-size: 200%;
+        background-clip: linear-gradient(to top, #f1f2b5, #135058);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
     }
     .grid-layout {
         display: grid;
@@ -537,4 +584,17 @@ footer>h4 {
         padding: 10px;
     }
 }
-    
+
+/* Animations */
+
+@keyframes slide_logo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(65vw - 100px));
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
