@@ -5,25 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedios/icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">    
     <title>Estampida | Integrantes</title>
 </head>
 
 <body>
 <!-- ▼ HEADER DE LA PAGINA-->
-    <header class="header">
-        <img width="169" height="127" src="../multimedios/logo2.png" alt="logo estampida"> 
-        <h1 class="header__titulo animate__animated animate__backInRight">ESTAMPIDA</h1>                
-        <nav class="header__menu">
-            <ul class="header__nav">
-                <li class="header__nav--li"><a href="../index.html">HOME</a></li>
-                <li class="header__nav--li"><a href="videos.html">VIDEOS</a></li>
-                <li class="header__nav--li"><a href="banda.html">BANDA</a></li>
-                <li class="header__nav--li"><a href="galeria.html">GALERIA</a></li>
-                <li class="header__nav--li"><a href="contacto.html">CONTACTO</a></li>              
+    <header class="header container-fluid">
+        <img width="169" height="127" src="../multimedios/logo2.png" alt="logo estampida">
+        <h1 class="header__titulo" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">ESTAMPIDA</h1>
+        <nav class="header__menu navbar navbar-expand-lg navbar-dark">
+        <section class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="header__nav navbar-nav">
+                <li class="header__nav--li nav-item"><a class="nav-link active" aria-current="page" href="../index.html">HOME</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="videos.html">VIDEOS</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="banda.html">BANDA</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="galeria.html">GALERIA</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>              
             </ul>
+            </div>
+        </section>
         </nav>
     </header>
 <!-- ▲ FIN HEADER DE LA PAGINA-->
@@ -60,7 +71,15 @@
                 </div>
             </li>                           
         </ul>
-    </section>    
+    </section> 
+    <div class="card container-fluid" style="width: 18rem;">
+        <img src="../multimedios/Perfil.jpg" class="card-img-top" alt="tarjeta a contactos">
+        <article class="card-body">
+          <h3 class="card-title">CONTACTANOS</h5>
+          <p class="card-text">Puedes acceder a la información sobre contrataciones demanera más personalizado, shows en vivo, stream, eventos exclusivos.</p>
+          <a href="mailto:estampidarockmza@gmail.com?subject=Quiero más info para contrataciones" class="btn btn-primary">Click para más info</a>
+        </article>
+    </div>   
 </main>
 <!-- ▲MAIN-->
 </body>
@@ -80,11 +99,13 @@
 </footer>
 <!-- ▲FIN DE LA PAGINA-->
 <!-- ▼ JS AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- ▲ FIN JS AOS-->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 

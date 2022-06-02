@@ -25,7 +25,6 @@
 }
 .header__menu {
     margin: auto;
-    padding: 10px;
     list-style-type: none;
     text-decoration: none;
     color: #77a47b;
@@ -109,15 +108,18 @@ section>h3 {
 }
 .article {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 5%;
+    width: 40%;
+    position: relative;
 }
 .article__ul--li {
     display: inline;
     padding: 20px;
 }
 
+/*
 .moved {
     transform: scale(1)
 }
@@ -174,23 +176,22 @@ footer>h4 {
 
 /* ESTILOS PAGINA VIDEOS */
 
+
 .section-article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow:hidden;
-    padding-bottom:400px;
-    position:relative;
     height:auto;
 }
+
 .section-article iframe{
     left:0;
     top:0;
-    height:100%;
     width:100%;
-    position:absolute;
 }
+/*
 .section__video {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -251,7 +252,7 @@ footer>h4 {
     bottom: 0%;
     color: #aec3b0;
     background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
-    width: 97%;
+    width: 100%;
     margin: 0;
     padding: 10px;
 }
@@ -475,11 +476,11 @@ footer>h4 {
         margin-top: 0;
     }
     .main__banda--titulos {
-        position: relative;
+        position: absolute;
         bottom: 0%;
         color: #aec3b0;
-        background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0.5));
-        width: 90%;
+        background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
+        width: 100%;
         margin: 0;
         padding: 10px;
     }
@@ -575,11 +576,11 @@ footer>h4 {
         margin-top: 0;
     }
     .main__banda--titulos {
-        position: relative;
+        position: absolute;
         bottom: 0%;
         color: #aec3b0;
-        background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0.5));
-        width: 95%;
+        background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
+        width: 100%;
         margin: 0;
         padding: 10px;
     }

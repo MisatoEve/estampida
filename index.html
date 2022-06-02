@@ -5,25 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./multimedios/icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">    
     <title>Estampida | Home</title>
 </head>
 
 <body>
 <!-- ▼HEADER DE LA PAGINA-->
-    <header class="header">
+    <header class="header container-fluid">
         <img width="169px" height="127px" src="./multimedios/logo2.png" alt="logo estampida"> 
-        <h1 class="header__titulo animate__animated animate__backInRight">ESTAMPIDA</h1>                
-        <nav class="header__menu">
-            <ul class="header__nav">
-                <li class="header__nav--li"><a href="index.html">HOME</a></li>
-                <li class="header__nav--li"><a href="./page/videos.html">VIDEOS</a></li>
-                <li class="header__nav--li"><a href="./page/banda.html">BANDA</a></li>
-                <li class="header__nav--li"><a href="./page/galeria.html">GALERIA</a></li>
-                <li class="header__nav--li"><a href="./page/contacto.html">CONTACTO</a></li>              
+        <h1 class="header__titulo" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">ESTAMPIDA</h1>
+        <nav class="header__menu navbar navbar-expand-lg navbar-dark">
+        <section class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="header__nav navbar-nav">
+                <li class="header__nav--li nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="./page/videos.html">VIDEOS</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="./page/banda.html">BANDA</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="./page/galeria.html">GALERIA</a></li>
+                <li class="header__nav--li nav-item"><a class="nav-link" href="./page/contacto.html">CONTACTO</a></li>              
             </ul>
+            </div>
+        </section>
         </nav>
     </header>
 <!-- ▲FIN HEADER DE LA PAGINA-->
@@ -34,14 +45,14 @@
             <img class="main__principal--imagen2" src="./multimedios/Perfil.jpg" alt="perfil imagen estampida">
             <section class="main__principal--texto transicion__texto">
                 <h2 class="letraColor">BANDA ARGENTINA DE ROCK</h2>
-                <p>ESTAMPIDA: Es un grupo de Rock mendocino; se 
+                <p class="lead">ESTAMPIDA: Es un grupo de Rock mendocino; se 
                 caracteriza por hacer temas de su propia autoría, y de 
                 fomentar los derechos de los artistas bajo sus propias 
                 convicciones. Integrado por Nicolás Tietti en guitarra y 
                 voz; Oscar Elizondo en bajo y Emanuel Ochoa en 
                 batería.                 
                 </p>
-                <p>Es una banda de rock nacional alternativo, la cual 
+                <p class="lead">Es una banda de rock nacional alternativo, la cual 
                 refleja el estilo de música principalmente del Rock, en 
                 tiempos actuales, pretende ser trascendental en sus
                 mensajes, para ello cada tema posee mucho contenido en 
@@ -60,13 +71,32 @@
                 data-aos-anchor-placement="bottom-bottom"></iframe>
             </section>
         </div>
-            <article class="article">
-                <ul class="moved">
-                    <li class="article__ul--li"><img class="transicion__img" width="241" height="338" src="./multimedios/home1.jpeg" alt="vocalista"></li>
-                    <li class="article__ul--li"><img class="moved__1 transicion__img" width="339" height="242" src="./multimedios/home3.jpeg" alt="baterista"></li>
-                    <li class="article__ul--li"><img class="transicion__img" width="243" height="341" src="./multimedios/home2.jpeg" alt="bajista"></li>
-                </ul>
+        <div id="carouselExampleIndicators" class="article carousel slide container-fluid" data-bs-ride="true">
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </article>
+            <div class="carousel-inner">
+                <article class="carousel-item active">
+                <img src="./multimedios/home1.jpeg" class="d-block w-100" alt="vocalista">
+                </article>
+                <article class="carousel-item">
+                <img src="./multimedios/home3.jpeg" class="d-block w-100" alt="baterista">
+                </article>
+                <article class="carousel-item">
+                <img src="./multimedios/home2.jpeg" class="d-block w-100" alt="bajista">
+                </article>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 <!-- ▲MAIN-->
 <!-- ▼FOOTER DE LA PAGINA-->
@@ -90,5 +120,7 @@
         AOS.init();
     </script>
 <!-- ▲ FIN JS AOS-->
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
