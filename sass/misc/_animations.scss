@@ -1,0 +1,30 @@
+/* ▼ Animations */
+/* contactos */
+@keyframes slide_logo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(65vw - 100px));
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+/* videos textos */
+@keyframes anim {
+    from { width: 0;}
+}
+
+/*videos fondo */
+@keyframes fondoanim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

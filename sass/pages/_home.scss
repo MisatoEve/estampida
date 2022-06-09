@@ -1,0 +1,181 @@
+/* ▼ main home */
+
+/* ESTILOS MAIN HOME*/
+
+.main__principal {
+    background-color: $background-color;
+    &--imagen{
+        width: 100%;
+    } 
+    &--imagen2{
+        width: 80%;
+    }
+    &--audio {
+        display: block;
+        position: fixed;
+        bottom: 2%;
+    }
+    &--section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    &--texto {
+        display: inline-block;
+        width: 40%;
+        padding: 20px;
+        font-style: italic;
+        font-family: $font-principal;
+        color: rgb(241, 237, 231);
+        & .letraColor {
+            color: $primary;
+        }
+    }    
+    &--audio {
+        width: 295px;
+        height: 54px
+    }
+}
+
+.transicion__texto {
+    width: 40%;
+    height: 40%;
+    transition: width 1s linear, heigth 1s ease-in-out;
+    &:hover {
+        width: 60%;
+        height: 60%;
+        background-color: $base;
+        font-size: 130%;
+    }
+}
+
+.video {
+    background-image: url(../multimedios/back4.jpg);
+    background-size: 100%;
+    color: $primary;
+    padding: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &iframe {
+        left:0;
+        top:0;
+        position: sticky;
+        margin: 20%;
+    }
+}
+
+section>h3 {
+    font-size: x-large;
+}
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 50%;
+    position: relative;
+    &__ul--li {
+        display: inline;
+        padding: 20px;
+    }    
+}
+
+/* ▼ RESPONSIVE @MEDIA QUERIES */
+/* ▼tablet */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    /* index */
+    .main__principal {
+        &--section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5%;
+        }
+        &--texto {
+            display: block;
+            box-sizing: border-box;
+            block-size: auto;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding: 10px;
+            font-style: italic;
+            font-family: $font-principal;
+            color: rgb(241, 237, 231);
+            font-size: larger;
+        }
+        &--audio {
+            display: flex;
+            position: relative;
+            width: 220px;
+            height: 40px
+        }
+    }
+    .video {
+        padding: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &> iframe {
+            left:0;
+            top:0;
+            height: 80%;
+            width:80%;        
+            position: sticky;
+        }        
+    }
+    .article {
+        width: 60%;
+    }
+}
+
+/* ▼mobile */
+@media only screen and (max-width: 480px) {
+    /* index */
+    .main__principal {
+        &--section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5%;
+        }
+        &--texto {
+            display: block;
+            width: 60%;
+            padding: 20px;
+            font-style: italic;
+            font-family: $font-principal;
+            color: rgb(219, 218, 215);
+            font-size: larger;
+        }
+        &--audio {
+            display: flex;
+            position: relative;
+            width: 150px;
+            height: 30px
+        }  
+    }      
+    .video {
+        padding: 20px;
+        &> iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position: sticky;
+        }        
+    }
+    .article {
+        width: 60%;
+    }
+}

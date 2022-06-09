@@ -1,0 +1,42 @@
+/* ▼ ESTILOS HEADER */
+.header {
+    background-color: $background-color;
+    display: flex;
+    &__titulo {
+        color: $secondary;
+        font-size: 280%;
+        font-family: $font-principal; 
+        display: flex; 
+        align-items: center; 
+        background: linear-gradient(to top, #f1f2b5, #135058);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: none;
+    }
+    &__menu {
+        margin: auto;
+        list-style-type: none;
+        text-decoration: none;
+        color: $primary;
+        background-color: $background-color; 
+    }    
+    &__nav {
+        &a{
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        }    
+        &--li {
+        padding: 7px;
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+            &:hover {
+            background: $base;
+            border-radius: 5%;
+            }
+        }
+    }
+}

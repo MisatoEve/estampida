@@ -1,0 +1,110 @@
+/* ▼ ESTILOS FOOTER */
+
+footer {
+    background-color: $base;
+    padding-top: 2%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-end;
+    color: $secondary;
+    font-family: $font-third;
+    &>h4 {
+    background-color: $primary;
+    margin: 2px;
+    padding: 10px;   
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2%;
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }    
+    & a {
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    }    
+    &1 a:hover {
+        color: rgba(59, 89, 152, 1);
+    }
+    &2 a:hover {
+        color: #d6249f;
+    }
+    &3 a:hover {
+        color: rgba(255, 0, 0, 1);
+    }
+    &4 a:hover {
+        color: rgba(241, 87, 34, 1);
+    }
+    &5 a:hover {
+        color: rgba(30, 215, 96, 1)
+    }    
+}   
+
+.footerTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-justify: auto;
+    &__home {
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }    
+}
+
+.footerHome {
+    background:rgba(251, 253, 250, 0.2);
+    line-height: 3;
+    padding: 0.5em 3em;
+    margin: 1.5em;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    color: #aec3b0;
+    &:hover {
+        color: antiquewhite;
+        font-size: 18px;
+    }    
+}
+
+/* RESPONSIVE */
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    /* footer */
+    .iconify {
+        width: 30px;
+        height: 30px;
+    }
+    .footerTexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 480px) {
+    /* footer */
+    .iconify {
+        width: 20px;
+        height: 20px;
+    }
+    .footerTexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

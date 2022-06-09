@@ -1,0 +1,19 @@
+/* ▼ Externos */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* ▼ Misc */ 
+@import './misc/normalize';
+@import './misc/variables';
+@import './misc/animations';
+
+/* ▼ Partials */
+@import './partials/header';
+@import './partials/footer';
+
+/* ▼ Pages */
+@import './pages/home';
+@import './pages/videos';
+@import './pages/banda';
+@import './pages/galeria';
+@import './pages/contacto';
