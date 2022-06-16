@@ -298,7 +298,7 @@ footer>h4 {
 
 /* ESTILOS PAGINA CONTACTO */
 
-.main__principal--titulo {
+/*.main__principal--titulo {
     font-size: 30px;
     display: inline-block;
     left: 10%;
@@ -425,8 +425,16 @@ footer>h4 {
 /* tablet */
 @media only screen and (min-width: 481px) and (max-width: 978px) {
     /* galeria */
+    /*.header {
+        background-color: #000405;
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center;
+        font-size: small;     
+    }
     .header__titulo {
-        font-size: 200%;
+        font-size: 120%;
         background-clip: linear-gradient(to top, #f1f2b5, #135058);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -451,7 +459,7 @@ footer>h4 {
         grid-row: 8 / 9;
     }
     /* videos */
-    .section__video {
+    /*.section__video {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
@@ -545,7 +553,7 @@ footer>h4 {
 /* mobile */
 @media only screen and (max-width: 480px) {
     /* galeria */
-    .header {
+    /*.header {
         background-color: #000405;
         display: flex;
         justify-content: flex-start; 
@@ -553,7 +561,17 @@ footer>h4 {
         align-items: center;
         font-size: small;     
     }
-   .main__principal--texto {
+    .header__titulo {
+        font-size: 80%;
+        background-clip: linear-gradient(to top, #f1f2b5, #135058);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .header__log {
+        width: 129px;
+        height: 87px;
+    }
+    .main__principal--texto {
         display: flex;
         justify-content: center;  
     }
@@ -602,7 +620,7 @@ footer>h4 {
         grid-row: 8 / 9;
     }
     /* videos */
-    .section__video {
+    /*.section__video {
         display: flex;
         flex-direction: column;
     }
@@ -666,7 +684,7 @@ footer>h4 {
         padding: 10px;
     }
     /* contacto */
-    .main__principal--contactoForm {
+    /*.main__principal--contactoForm {
         display: flex;
         flex-direction: column;
     }

@@ -1,6 +1,7 @@
 /* ▼ESTILOS PAGINA BANDA */
 
 .main__banda {
+    @extend .main__principal--videos;    
     font-style: italic; 
     color: white; 
     padding: 5%;
@@ -18,7 +19,7 @@
         grid-template-rows: 1fr 1fr;
         grid-gap: 3rem;
         background-size: cover;
-        margin-bottom: 150px;    
+        margin-bottom: 3rem;    
     }     
     &1 {
         grid-column: 1 / 3;
@@ -47,65 +48,15 @@
     }       
 }
 .letraColor {
+    @extend .main__principal--videos;    
     color: #77a47b;
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
 }
-
-/* ▼ RESPONSIVE @MEDIA QUERIES */
-/* tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px) {
-    /* banda */
-    .main__banda {
-        &--li {
-            list-style-type: none;
-            text-decoration: none; 
-            display: flex;
-            flex-direction: column;
-            grid-gap: 3rem;
-            background-size: cover;   
-            margin-bottom: 0%;  
-        }        
-        &3 {
-            margin-top: 0;
-        }
-        &--titulos {
-            position: absolute;
-            bottom: 0%;
-            color: #aec3b0;
-            background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
-            width: 100%;
-            margin: 0;
-            padding: 10px;
-        } 
-    }
-}   
-
-/* mobile */
-@media only screen and (max-width: 480px) {
-    /* ▼banda */
-    .main__banda {
-        &--li {
-            list-style-type: none;
-            text-decoration: none; 
-            display: flex;
-            flex-direction: column;
-            grid-gap: 3rem;
-            background-size: cover;   
-            margin-bottom: 0%;  
-        }
-        &3 {
-            margin-top: 0;
-        }
-        &--titulos {
-            position: absolute;
-            bottom: 0%;
-            color: #aec3b0;
-            background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
-            width: 100%;
-            margin: 0;
-            padding: 10px;
-        }
-    }
+.click {
+    @extend .main__principal;
+    color: white;
+    border-bottom: #77a47b;
 }

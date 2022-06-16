@@ -1,0 +1,67 @@
+/* ▼ESTILOS PAGINA CONTACTO */
+
+.main__principal {
+    &--titulo {
+    font-size: 30px;
+    display: inline-block;
+    left: 10%;
+    color:#77a47b;
+    padding: 5%;
+    }
+    &--contacto {
+    background-color: #135058;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+        &Form {
+        display: block;
+        align-items: center;
+        background: rgba(251, 253, 250, 0.2);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7.5px );
+        -webkit-backdrop-filter: blur( 7.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );   
+        }        
+    }
+    &--letra {
+        @extend .main__principal--titulo;
+        color: #000405;
+        padding: 2%;
+    }        
+}
+.logoSmall {
+    width: 5%;
+    animation: slide_logo 4s ease infinite;
+}
+
+.letraContacto {
+    color: #000405;
+}
+.form {
+    &1 {
+    width: 300px;
+    height: 200px;
+    content: 150px;
+        &__contacto {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;    
+        }  
+    } 
+    &2 {
+    display: block;
+    width: 100px;
+    background-color:#01161e;
+    padding: 2px;
+    border-radius: 5%;
+    color: aliceblue;
+    }     
+}
+
+

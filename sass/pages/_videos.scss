@@ -6,10 +6,7 @@
     animation: fondoanim 10s infinite;
 }
 .section-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column, center, center, 0);
     overflow:hidden;
     height:auto;
     & iframe{
