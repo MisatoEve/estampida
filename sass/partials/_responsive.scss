@@ -113,7 +113,20 @@
             margin: 0;
             padding: 10px;
         } 
-    }    
+    }   
+    /* contacto */
+    .main__principal--contactoForm {
+        @include flex(column, space-evenly, center, 0);
+        flex-wrap: wrap;
+    }     
+    .form1 {
+        width: 400px;
+        height: 150px;
+        content: 150px;
+    }
+    .form3 {
+        width: 350px;
+    }
     /* footer */
     .iconify {
         width: 30px;
@@ -132,10 +145,7 @@
     /* index */
     .main__principal {
         &--section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @include flex(column, center, center, 0);
             padding: 5%;
         }
         &--texto {
@@ -180,10 +190,7 @@
     /* galeria */
     .header {
         background-color: #000405;
-        display: flex;
-        justify-content: flex-start; 
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, flex-start, center, 0);
         font-size: small;  
         &__titulo {
             font-size: 2rem;

@@ -11,11 +11,8 @@
     &--contacto {
     background-color: #135058;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex(column, center, center, 0);
     flex-wrap: wrap;
-    align-content: center;
         &Form {
         display: block;
         align-items: center;
@@ -40,6 +37,17 @@
 
 .letraContacto {
     color: #000405;
+    &1 {
+        color: $primary;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        @include flex(column, center, center, 0);
+    }
+    &2 {
+        @extend .letraContacto;
+        list-style-type: none;
+        text-decoration: none;
+    }
 }
 .form {
     &1 {
@@ -56,6 +64,7 @@
     } 
     &2 {
     display: block;
+    align-items: center;
     width: 100px;
     background-color:#01161e;
     padding: 2px;
@@ -63,5 +72,3 @@
     color: aliceblue;
     }     
 }
-
-
