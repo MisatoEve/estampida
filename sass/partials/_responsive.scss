@@ -57,7 +57,7 @@
         align-items: center;
         font-size: small;
         &__titulo {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             background-clip: linear-gradient(to top, #f1f2b5, #135058);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -137,6 +137,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        &__home {
+            display: flex;
+            justify-content: center;
+            text-align: auto;
+            font-size: small;
+        }
     }    
 }
 
@@ -299,7 +305,33 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-    }   
+    }    
+    .footerTexto__home{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    .footerHome {
+        background:rgba(251, 253, 250, 0.2);
+        line-height: 3;
+        padding: 0.1em;
+        margin: 0.04em;
+        position: relative;
+        text-decoration: none;
+        list-style-type: none;
+        color: #aec3b0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        &:hover {
+            color: antiquewhite;
+            font-size: 18px;
+        }       
+    }
 }
 
 
