@@ -25,6 +25,7 @@ footer {
     &__footer {
         display: flex;
         justify-content: center;
+        padding-left: 0%;
     }    
     & a {
         list-style-type: none;
@@ -59,6 +60,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-justify: auto;
+    font-size: 2.3em;
     &__home {
         display: block; 
         justify-content: center;
@@ -67,6 +69,7 @@ footer {
         margin-right: auto;
         margin-top: 1em;
         margin-bottom: 1em;
+        font-size: 1.6em;
     }    
 }
 

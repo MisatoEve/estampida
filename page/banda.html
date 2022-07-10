@@ -17,26 +17,26 @@
 
 <body>
 <!-- ▼ HEADER DE LA PAGINA-->
-    <header class="header container-fluid">
-        <img width="169" height="127" src="../multimedios/logo2.png" alt="logo estampida">
+    <header class="header">
+        <img class="header__log" width="169" height="127" src="../multimedios/logo2.png" alt="logo estampida">
         <h1 class="header__titulo text-uppercase" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">estampida</h1>
         <nav class="header__menu navbar navbar-expand-lg navbar-dark">
-        <section class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>            
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="header__nav navbar-nav">
-                <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" aria-current="page" href="../index.html">home</a></li>
-                <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="videos.html">videos</a></li>
-                <li class="header__nav--li nav-item"><a class="nav-link active text-uppercase" href="banda.html">banda</a></li>
-                <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="galeria.html">galeria</a></li>
-                <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="contacto.html">contacto</a></li>              
-            </ul>
-            </div>
-        </section>
+            <section class="headerMenu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>            
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="header__nav navbar-nav">
+                        <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" aria-current="page" href="../index.html">home</a></li>
+                        <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="videos.html">videos</a></li>
+                        <li class="header__nav--li nav-item"><a class="nav-link active text-uppercase" href="banda.html">banda</a></li>
+                        <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="galeria.html">galeria</a></li>
+                        <li class="header__nav--li nav-item"><a class="nav-link text-uppercase" href="contacto.html">contacto</a></li>              
+                    </ul>
+                </div>
+            </section>
         </nav>
     </header>
 <!-- ▲ FIN HEADER DE LA PAGINA-->
@@ -57,7 +57,7 @@
             <li class="main__banda2" data-aos="flip-right">
             <h3 class="main__banda--texto">Oscar Elizondo “Toti”</h3>
                 <strong><img class="grid__img" src="../multimedios/Toti.jpeg" alt="presentación Oscar Elizondo"></strong>               
-                <div class="main__banda--titulos">
+                <div class="main__banda--titulos banda">
                 <p>Las Heras, Mendoza.</p>      
                 <p>Cargo/Instrumento: Bajo.</p>
                 <h4 class="main__banda--texto text-uppercase">integrante estampida</h4>         
@@ -74,14 +74,16 @@
             </li>                           
         </ul>
     </section> 
-    <div class="card container-fluid letraColor" style="width: 18rem;">
-        <img src="../multimedios/Perfil.jpg" class="card-img-top" alt="tarjeta a contactos">
-        <article class="card-body">
-          <h3 class="card-title">CONTACTANOS</h5>
-          <p class="card-text">Puedes acceder a la información sobre contrataciones demanera más personalizado, shows en vivo, stream, eventos exclusivos.</p>
-          <a href="mailto:estampidarockmza@gmail.com?subject=Quiero más info para contrataciones" class="btn btn-primary click">Click para más info</a>
-        </article>
-    </div>   
+    <section class="main__banda--nueva">
+        <div class="card container-fluid letraColor" style="width: 28rem;">
+            <img src="../multimedios/Perfil.jpg" class="card-img-top" alt="tarjeta a contactos">
+            <article class="card-body">
+                <h3 class="card-title">CONTACTANOS</h5>
+                <p class="card-text">Puedes acceder a la información sobre contrataciones demanera más personalizado, shows en vivo, stream, eventos exclusivos.</p>
+                <a href="mailto:estampidarockmza@gmail.com?subject=Quiero más info para contrataciones" class="btn btn-primary click">Click para más info</a>
+            </article>
+        </div> 
+    </section> 
 </main>
 <!-- ▲MAIN-->
 </body>

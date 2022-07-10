@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 62.5%; }
+
 /*colors*/
 /*font-family*/
 /* ▼ Animations */
@@ -45,7 +48,7 @@
   padding: 1rem; }
   .header__titulo {
     color: #aec3b0;
-    font-size: 280%;
+    font-size: 5em;
     font-family: "Varela Round", sans-serif;
     display: flex;
     align-items: center;
@@ -66,9 +69,10 @@
     justify-content: flex-end;
     width: 100%; }
   .header__nav--li {
-    padding: 7px;
+    padding: .45rem;
     font-family: 'Montserrat', sans-serif;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.7em; }
     .header__nav--li:hover {
       background: #01161e;
       border-radius: 5%; }
@@ -96,7 +100,8 @@ footer {
   margin: 2%; }
   .icon__footer {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding-left: 0%; }
   .icon a {
     list-style-type: none;
     text-decoration: none;
@@ -131,7 +136,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-justify: auto; }
+  text-justify: auto;
+  font-size: 2.3em; }
   .footerTexto__home {
     display: block;
     justify-content: center;
@@ -139,7 +145,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: 1.6em; }
 
 .footerHome {
   background: rgba(251, 253, 250, 0.2);
@@ -162,7 +169,7 @@ footer {
   .main__principal--imagen {
     width: 100%; }
   .main__principal--imagen2 {
-    width: 80%; }
+    width: 65%; }
   .main__principal--audio {
     display: block;
     position: fixed;
@@ -176,13 +183,17 @@ footer {
     padding: 2rem; }
   .main__principal--texto {
     display: inline-block;
-    width: 50%;
-    padding: 20px;
+    width: auto;
+    padding: 1.5rem;
     font-style: italic;
     font-family: "Varela Round", sans-serif;
-    color: #f1ede7; }
-    .main__principal--texto .letraColor {
-      color: #77a47b; }
+    color: #f1ede7;
+    font-size: 2em; }
+    .main__principal--texto .letraColor, .main__principal--texto .letraContacto, .main__principal--texto .letraContacto2 {
+      color: #77a47b;
+      font-size: 2.8em; }
+    .main__principal--texto .lead {
+      font-size: 2em; }
   .main__principal--audio {
     width: 295px;
     height: 54px; }
@@ -218,7 +229,7 @@ section > h3 {
 
 .article {
   padding: 5%;
-  width: 50%;
+  width: 60%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -227,10 +238,10 @@ section > h3 {
   gap: 0; }
   .article__ul--li {
     display: inline;
-    padding: 20px; }
+    padding: 1.2rem; }
 
 /* ▼ESTILOS PAGINA VIDEOS */
-.main__principal--videos, .main__banda, .letraColor {
+.main__principal--videos, .main__banda, .main__banda--texto, .letraColor, .letraContacto, .letraContacto2 {
   background-image: linear-gradient(146deg, #000405 0%, #000e0e 15%, #022d29 31%, #064558 64%, #01161e 100%);
   background-size: 500%;
   animation: fondoanim 10s infinite; }
@@ -248,22 +259,25 @@ section > h3 {
     top: 0;
     width: 100%; }
 
-.letraColor__efecto {
+.letraColor__efecto, .letraContacto, .letraContacto2 {
   white-space: nowrap;
   overflow: hidden;
   width: 10em;
-  animation: anim 4s infinite; }
+  animation: anim 4s infinite;
+  font-size: 3em; }
 
 /* ▼ESTILOS PAGINA BANDA */
 .main__banda {
   font-style: italic;
   color: white;
-  padding: 5%; }
+  padding: 3%; }
   .main__banda--texto {
     color: #aec3b0;
     font-family: 'Montserrat', sans-serif;
     border: 5%;
-    padding: 20px; }
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center; }
   .main__banda--li {
     list-style-type: none;
     text-decoration: none;
@@ -272,7 +286,8 @@ section > h3 {
     grid-template-rows: 1fr 1fr;
     grid-gap: 3rem;
     background-size: cover;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    padding-left: 0%; }
   .main__banda1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -284,27 +299,53 @@ section > h3 {
   .main__banda3 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    margin-top: 100px;
+    margin-top: 1.5rem;
     position: relative; }
   .main__banda--titulos {
     position: absolute;
+    align-self: flex-end;
     bottom: 0%;
     color: #aec3b0;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0), black);
     width: 100%;
     margin: 0;
-    padding: 10px; }
+    padding: 2px;
+    font-size: 1.5em; }
+    .main__banda--titulos .p {
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      font-size: 1.2em; }
+  .main__banda--nueva {
+    padding-bottom: 1.5rem; }
 
-.letraColor {
+.banda {
+  color: #01161e;
+  text-shadow: #77a47b; }
+
+.letraColor, .letraContacto, .letraContacto2 {
   color: #77a47b;
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 2rem; }
+  margin-top: 1.5rem;
+  padding-top: 12px; }
 
 .click {
   color: white;
-  border-bottom: #77a47b; }
+  border: #77a47b;
+  display: block;
+  justify-content: center;
+  font-size: 1.9em;
+  font-family: "Courier New", Courier, monospace; }
+
+.card-title {
+  font-size: 2.5em;
+  color: white;
+  font-family: "Courier New", Courier, monospace; }
+
+.card-text {
+  font-size: 1.8em;
+  color: white;
+  font-family: "Courier New", Courier, monospace; }
 
 /* ▼ESTILOS PAGINA GALERIA */
 .main__galeria--texto {
@@ -321,7 +362,9 @@ section > h3 {
   grid-gap: 10px;
   background-size: cover;
   justify-self: center;
-  padding-bottom: 5%; }
+  padding-bottom: 3%;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .grid__img {
   width: 100%;
@@ -365,22 +408,37 @@ section > h3 {
   grid-row: 8 / 9; }
 
 .accordion {
-  width: 95%; }
+  width: 95%;
+  padding-bottom: 2%;
+  font-size: 1em; }
   .accordion-button:not(.collapsed) {
     color: inherit;
-    background: #000405;
-    color: #aec3b0; }
+    color: #aec3b0;
+    background-image: linear-gradient(146deg, #000405 0%, #000e0e 15%, #022d29 31%, #064558 64%, #01161e 100%);
+    animation: fondoanim 10s infinite;
+    font-size: 1em; }
+
+.accordion-item:first-of-type .accordion-button {
+  font-size: 1em; }
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  font-size: 1em; }
+
+.accordion-body {
+  font-size: 1.4em; }
 
 /* ▼ESTILOS PAGINA CONTACTO */
 .main__principal--titulo, .main__principal--letra {
-  font-size: 30px;
+  font-size: 25px;
   display: inline-block;
   left: 10%;
   color: #77a47b;
-  padding: 5%; }
+  padding-left: 5%;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif; }
 
 .main__principal--contacto {
-  background-color: #135058;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -391,27 +449,50 @@ section > h3 {
   .main__principal--contactoForm {
     display: block;
     align-items: center;
-    background: rgba(251, 253, 250, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18); }
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    margin: .5rem, .5rem; }
 
 .main__principal--letra {
-  color: #000405;
+  color: #77a47b;
   padding: 2%; }
+
+form {
+  padding: 1.25rem;
+  width: 500px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+  box-sizing: border-box;
+  font-size: 1.7em;
+  border: none; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px; }
 
 .logoSmall {
   width: 5%;
   animation: slide_logo 4s ease infinite; }
 
+.form-check-label {
+  font-size: 1.5em; }
+
 .letraContacto, .letraContacto2 {
-  color: #000405; }
+  color: white;
+  width: 20em; }
   .letraContacto1 {
     color: #77a47b;
     padding-top: 2px;
     padding-bottom: 2px;
+    background-color: #000405;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,7 +500,8 @@ section > h3 {
     gap: 0; }
   .letraContacto2 {
     list-style-type: none;
-    text-decoration: none; }
+    text-decoration: none;
+    width: 25em; }
 
 .form1 {
   width: 300px;
@@ -439,12 +521,51 @@ section > h3 {
   background-color: #01161e;
   padding: 2px;
   border-radius: 5%;
-  color: aliceblue; }
+  color: aliceblue;
+  justify-content: center; }
+
+.form3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.formButton {
+  background-color: #01161e;
+  color: aliceblue;
+  padding: 1rem; }
+  .formButton:hover {
+    cursor: pointer; }
 
 /* ▼ Partials estilos responsive */
 /* ▼ RESPONSIVE @MEDIA QUERIES */
 /* ▼tablet */
 @media only screen and (min-width: 481px) and (max-width: 978px) {
+  /* estilos nav header */
+  .header__nav--li {
+    font-size: 1em; }
+  .headerMenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    height: 100%;
+    margin: 0;
+    flex-direction: column; }
+  .header__menu {
+    display: block;
+    font-size: 1.1em;
+    cursor: pointer; }
+  #nav__button:checked ~ ul {
+    height: 270px;
+    transition: height 1s; }
+  .navbar-toggler {
+    font-size: 1.7em; }
+  .navbar-toggler:hover {
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-left: 5rem;
+    margin-right: 5rem; }
   /* index */
   .main__principal--section {
     display: flex;
@@ -467,7 +588,7 @@ section > h3 {
   .main__principal--audio {
     display: flex;
     position: relative;
-    width: 220px;
+    width: 230px;
     height: 40px; }
   .video {
     padding: 40px;
@@ -483,7 +604,7 @@ section > h3 {
       width: 80%;
       position: sticky; }
   .article {
-    width: 60%; }
+    width: 80%; }
   /* galeria */
   .header {
     background-color: #000405;
@@ -493,7 +614,7 @@ section > h3 {
     align-items: center;
     font-size: small; }
     .header__titulo {
-      font-size: 2.2rem;
+      font-size: 3.8rem;
       background-clip: linear-gradient(to top, #f1f2b5, #135058);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -503,7 +624,10 @@ section > h3 {
     grid-auto-rows: 400px;
     grid-gap: 10px;
     background-size: cover;
-    justify-self: center; }
+    justify-self: center;
+    padding-bottom: 3%;
+    margin-left: 10px;
+    margin-right: 10px; }
   .grid-item6 {
     grid-column: 3 / 6; }
   .grid-item8 {
@@ -533,12 +657,22 @@ section > h3 {
   .main__banda--titulos {
     position: absolute;
     bottom: 0%;
-    color: #aec3b0;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0), black);
     width: 100%;
     margin: 0;
     padding: 10px; }
+  .banda {
+    color: #01161e;
+    text-shadow: #77a47b; }
   /* contacto */
+  .main__principal--titulo, .main__principal--letra {
+    font-size: 2em;
+    display: inline-block;
+    left: 10%;
+    color: #77a47b;
+    padding-left: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif; }
   .main__principal--contactoForm {
     display: flex;
     flex-direction: column;
@@ -552,6 +686,10 @@ section > h3 {
     content: 150px; }
   .form3 {
     width: 350px; }
+  form {
+    width: 400px; }
+  .letraContacto, .letraContacto2 {
+    font-size: 2em; }
   /* footer */
   .iconify {
     width: 30px;
@@ -570,6 +708,27 @@ section > h3 {
 /* ▼mobile */
 @media only screen and (max-width: 480px) {
   /* index */
+  .header__menu {
+    display: inline-flex;
+    font-size: 0.8em;
+    cursor: pointer;
+    justify-content: center; }
+  .navbar-toggler {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em; }
+  .navbar-toggler:hover {
+    text-decoration: none;
+    justify-content: center;
+    font-size: 1.8em;
+    margin-left: 5rem;
+    margin-right: 5rem; }
+  .header__nav--li {
+    padding: 0.45rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    justify-content: center;
+    display: flex; }
   .main__principal--section {
     display: flex;
     flex-direction: column;
@@ -590,13 +749,15 @@ section > h3 {
   .main__principal--audio {
     display: flex;
     position: relative;
-    width: 150px;
+    width: 180px;
     height: 30px; }
+  .main__principal--imagen2 {
+    width: 100%; }
   .transicion__texto {
     transition: width 1s linear, heigth 1s ease-in-out; }
     .transicion__texto:hover {
       background-color: #01161e;
-      font-size: 100%; }
+      font-size: 75%; }
   .video {
     padding: 20px; }
     .video > iframe {
@@ -606,7 +767,7 @@ section > h3 {
       width: 100%;
       position: sticky; }
   .article {
-    width: 60%; }
+    width: 80%; }
   /* galeria */
   .header {
     background-color: #000405;
@@ -617,24 +778,22 @@ section > h3 {
     gap: 0;
     font-size: small; }
     .header__titulo {
-      font-size: 2rem;
+      font-size: 3rem;
       background-clip: linear-gradient(to top, #f1f2b5, #135058);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .header__log {
       width: 129px;
       height: 87px; }
-  /*.main__principal--texto {
-        display: flex;
-        justify-content: center;  
-    }*/
   .grid-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
     grid-gap: 10px;
     background-size: cover;
-    justify-self: center; }
+    justify-self: center;
+    margin-left: 10px;
+    margin-right: 10px; }
   .grid-item1 {
     grid-column: 1 / 4; }
   .grid-item2 {
@@ -666,12 +825,25 @@ section > h3 {
     display: flex;
     flex-direction: column; }
   /* contacto */
+  .main__principal--titulo, .main__principal--letra {
+    font-size: 15px;
+    display: inline-block;
+    left: 10%;
+    color: #77a47b;
+    padding-left: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif; }
   .main__principal--contactoForm {
     display: flex;
     flex-direction: column; }
   .logoSmall {
     width: 8%;
     animation: slide_logo 4s ease infinite; }
+  form {
+    width: 100%; }
+  .letraContacto, .letraContacto2 {
+    font-size: 1.5em; }
   /* ▼banda */
   .main__banda--li {
     list-style-type: none;
@@ -686,11 +858,12 @@ section > h3 {
   .main__banda--titulos {
     position: absolute;
     bottom: 0%;
-    color: #aec3b0;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0), black);
     width: 100%;
     margin: 0;
     padding: 10px; }
+  .banda {
+    color: #01161e;
+    text-shadow: #77a47b; }
   /* footer */
   .iconify {
     width: 20px;

@@ -2,51 +2,79 @@
 
 .main__principal {
     &--titulo {
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
     left: 10%;
     color:#77a47b;
-    padding: 5%;
+    padding-left: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;    
     }
     &--contacto {
-    background-color: #135058;
     padding: 20px;
     @include flex(column, center, center, 0);
     flex-wrap: wrap;
         &Form {
         display: block;
         align-items: center;
-        background: rgba(251, 253, 250, 0.2);
+        background: rgba(0, 0, 0, 0.4);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 7.5px );
         -webkit-backdrop-filter: blur( 7.5px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );   
+        color: white;
+        margin: .5rem, .5rem;
         }        
     }
     &--letra {
         @extend .main__principal--titulo;
-        color: #000405;
+        color: #77a47b;
         padding: 2%;
     }        
+}
+form {
+    padding: 1.25rem;
+    width: 500px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    font-size: 1.7em;
+    border: none;
+}
+textarea {
+    min-height: 100px;
+    max-height: 200px;
 }
 .logoSmall {
     width: 5%;
     animation: slide_logo 4s ease infinite;
 }
+.form-check-label {
+    font-size: 1.5em;
+}
 
 .letraContacto {
-    color: #000405;
+    color: white;
+    @extend .letraColor;
+    @extend .letraColor__efecto;
+    width: 20em;
     &1 {
         color: $primary;
         padding-top: 2px;
         padding-bottom: 2px;
+        background-color: #000405;
         @include flex(column, center, center, 0);
     }
     &2 {
         @extend .letraContacto;
         list-style-type: none;
         text-decoration: none;
+        width: 25em;
     }
 }
 .form {
@@ -70,5 +98,21 @@
     padding: 2px;
     border-radius: 5%;
     color: aliceblue;
+    justify-content: center;
     }     
+    &3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &Button {
+        background-color:#01161e;
+        color: aliceblue;
+        padding: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
+
+  

@@ -1,6 +1,38 @@
 /* ▼ RESPONSIVE @MEDIA QUERIES */
 /* ▼tablet */
 @media only screen and (min-width: 481px) and (max-width: 978px) {
+    /* estilos nav header */
+    .header__nav--li {
+        font-size: 1em;
+    }
+    .headerMenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: end;
+        height: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .header__menu {
+        display: block;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    #nav__button:checked ~ ul {
+        height: 270px;
+        transition: height 1s;
+    }
+    .navbar-toggler {
+        font-size: 1.7em;
+    }
+    .navbar-toggler:hover {
+        text-decoration: none;
+        font-size: 1.8em;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
     /* index */
     .main__principal {
         &--section {
@@ -26,7 +58,7 @@
         &--audio {
             display: flex;
             position: relative;
-            width: 220px;
+            width: 230px;
             height: 40px
         }
     }
@@ -46,7 +78,7 @@
         }        
     }
     .article {
-        width: 60%;
+        width: 80%;
     }
     /* galeria */
     .header {
@@ -57,7 +89,7 @@
         align-items: center;
         font-size: small;
         &__titulo {
-            font-size: 2.2rem;
+            font-size: 3.8rem;
             background-clip: linear-gradient(to top, #f1f2b5, #135058);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -70,6 +102,9 @@
         grid-gap: 10px;
         background-size: cover;    
         justify-self: center;
+        padding-bottom: 3%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .grid-item6 {
         grid-column: 3 / 6;
@@ -107,18 +142,32 @@
         &--titulos {
             position: absolute;
             bottom: 0%;
-            color: #aec3b0;
-            background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
             width: 100%;
             margin: 0;
             padding: 10px;
         } 
-    }   
+    }  
+    .banda {
+        color: $base;
+        text-shadow: #77a47b;
+    }
     /* contacto */
-    .main__principal--contactoForm {
+    .main__principal {
+        &--titulo {
+        font-size: 2em;
+        display: inline-block;
+        left: 10%;
+        color:#77a47b;
+        padding-left: 5%;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;    
+        }
+        &--contactoForm {
         @include flex(column, space-evenly, center, 0);
         flex-wrap: wrap;
-    }     
+        } 
+    }    
     .form1 {
         width: 400px;
         height: 150px;
@@ -126,6 +175,12 @@
     }
     .form3 {
         width: 350px;
+    }
+    form {
+        width: 400px;
+    }
+    .letraContacto {
+        font-size: 2em;
     }
     /* footer */
     .iconify {
@@ -149,6 +204,31 @@
 /* ▼mobile */
 @media only screen and (max-width: 480px) {
     /* index */
+    .header__menu {
+        display: inline-flex;
+        font-size: 0.8em;
+        cursor: pointer;
+        justify-content: center;
+    }
+    .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8em;
+    }
+    .navbar-toggler:hover {
+        text-decoration: none;
+        justify-content: center;
+        font-size: 1.8em;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .header__nav--li {
+        padding: 0.45rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        justify-content: center;
+        display: flex;
+    }
     .main__principal {
         &--section {
             @include flex(column, center, center, 0);
@@ -168,15 +248,18 @@
         &--audio {
             display: flex;
             position: relative;
-            width: 150px;
+            width: 180px;
             height: 30px
         }  
+        &--imagen2 {
+            width: 100%;
+        }
     }    
     .transicion__texto {
         transition: width 1s linear, heigth 1s ease-in-out;
         &:hover {
             background-color: $base;
-            font-size: 100%;
+            font-size: 75%;
         }
     }      
     .video {
@@ -190,7 +273,7 @@
         }        
     }
     .article {
-        width: 60%;
+        width: 80%;
     }
 
     /* galeria */
@@ -199,7 +282,7 @@
         @include flex(column, flex-start, center, 0);
         font-size: small;  
         &__titulo {
-            font-size: 2rem;
+            font-size: 3rem;
             background-clip: linear-gradient(to top, #f1f2b5, #135058);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -209,10 +292,7 @@
             height: 87px;
         }              
     }
-    /*.main__principal--texto {
-        display: flex;
-        justify-content: center;  
-    }*/
+
     .grid-layout {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -220,6 +300,8 @@
         grid-gap: 10px;
         background-size: cover;    
         justify-self: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .grid-item1 {
         grid-column: 1 / 4;
@@ -263,13 +345,31 @@
         flex-direction: column;
     }
     /* contacto */
-    .main__principal--contactoForm {
+    .main__principal {
+        &--titulo {
+        font-size: 15px;
+        display: inline-block;
+        left: 10%;
+        color:#77a47b;
+        padding-left: 5%;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;    
+        }
+        &--contactoForm {
         display: flex;
         flex-direction: column;
+        }
     }
     .logoSmall {
         width: 8%;
         animation: slide_logo 4s ease infinite;
+    }
+    form {
+        width: 100%;
+    }
+    .letraContacto {
+        font-size: 1.5em;
     }
     /* ▼banda */
     .main__banda {
@@ -280,7 +380,7 @@
             flex-direction: column;
             grid-gap: 3rem;
             background-size: cover;   
-            margin-bottom: 0%;  
+            margin-bottom: 0%; 
         }
         &3 {
             margin-top: 0;
@@ -288,13 +388,15 @@
         &--titulos {
             position: absolute;
             bottom: 0%;
-            color: #aec3b0;
-            background: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(0,0,0,1));
             width: 100%;
             margin: 0;
             padding: 10px;
         }
     } 
+    .banda {
+        color: $base;
+        text-shadow: #77a47b;
+    }
     /* footer */
     .iconify {
         width: 20px;
